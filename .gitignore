@@ -2,3 +2,4 @@ build
 .gradle
 .idea
 /jitpack-test.iml
+/jitpack-test-client.iml
