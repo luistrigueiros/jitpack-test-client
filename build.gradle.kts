@@ -24,6 +24,7 @@ application {
 }
 
 dependencies {
+    compile("com.github.luistrigueiros:jitpack-test-provider:master-SNAPSHOT")
     compile("com.google.guava:guava:23.0")
     testCompile("junit:junit:4.12")
     compile(kotlin("stdlib-jdk8", kotlinVersion))
@@ -32,6 +33,9 @@ dependencies {
 repositories {
     jcenter()
     google()
+    maven {
+        setUrl("https://jitpack.io")
+    }
 }
 val compileKotlin: KotlinCompile by tasks
 compileKotlin.kotlinOptions {
